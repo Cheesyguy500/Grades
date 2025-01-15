@@ -10,6 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/footing.css" />
     <link rel="stylesheet" type="text/css" href="css/christmas.css" />
 <script>
+      //Adding a passcode to the site
+    const passkey = "W";
+    const cheatPasskey = "Retrobowl";
+    const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+    const cheatsUrl = 'https://Cheesyguy500.github.io/bookmarks/';
+    alert("Welcome to our grades site! To proceed, you must enter the password.");
+    var attempt = prompt("Please enter the password:");
+    if(attempt != passkey && attempt != cheatPasskey) {
+        alert("Correct!");
+        window.location.replace(url);
+    } else if(attempt === cheatPasskey) {
+        alert("Correct! You may now proceed to our game cheats page!");
+        window.location.replace(cheatsUrl);
+    } else {
+        alert("Correct! You may now proceed to our site!");
+    }
+
     // Function to load total time spent and display it
     function displayTotalTimeSpent() {
         const totalKey = 'totalTimeSpent';
@@ -69,7 +86,7 @@
 
     <div class="container">
         <br></br>
-        <h1>Proll's Games V4.2</h1>
+        <h1>Cheesy's games V4.2</h1>
         <center>
             <a>Time Spent: </a><span id="timeSpent">Loading...</span>
         </center>
